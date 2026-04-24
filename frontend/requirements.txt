@@ -1,0 +1,11 @@
+streamlit
+pandas
+numpy
+requests
+
+
+.\venv\Scripts\activate
+
+streamlit run frontend/app.py
+
+uvicorn backend.main:app --reload

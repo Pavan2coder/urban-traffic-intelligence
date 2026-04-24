@@ -1,0 +1,8 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.vscode/
+ml/traffic_model.pkl
+ml/junction_mapping.pkl
+ml/traffic.csv
