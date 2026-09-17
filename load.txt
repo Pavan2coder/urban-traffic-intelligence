@@ -1,0 +1,7 @@
+# 1. Activate Python Environment & Start Backend (FastAPI)
+.\venv\Scripts\activate
+uvicorn backend.main:app --reload
+
+# 2. Start React Frontend (Vite)
+cd frontend
+npm run dev
