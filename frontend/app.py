@@ -8,6 +8,16 @@ import datetime
 st.set_page_config(page_title="Urban Traffic Intelligence", page_icon="🚦", layout="wide")
 BACKEND_URL = "http://127.0.0.1:8000" 
 
+# Inject Baloo 2 Google Font
+st.markdown("""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+    html, body, [class*="css"], h1, h2, h3, h4, h5, h6, .stMarkdown {
+        font-family: 'Baloo 2', cursive, sans-serif !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 if 'show_chart' not in st.session_state: st.session_state.show_chart = False
 if 'show_map' not in st.session_state: st.session_state.show_map = False
 
@@ -49,6 +59,13 @@ with st.sidebar:
 # ==========================================
 # MAIN DASHBOARD
 # ==========================================
+st.markdown("""
+    <div style="background: linear-gradient(135deg, #6366f1, #06b6d4); padding: 12px 20px; border-radius: 12px; margin-bottom: 20px; color: white;">
+        <h4 style="margin:0; color: white;">✨ Modern React Bits Web App is Live!</h4>
+        <p style="margin: 4px 0 0 0; font-size: 0.9rem;">Open <a href="http://localhost:5173" target="_blank" style="color: #ffffff; font-weight: bold; text-decoration: underline;">http://localhost:5173</a> in your browser for the full interactive UI with Framer Motion animations & glowing cards.</p>
+    </div>
+""", unsafe_allow_html=True)
+
 st.title("🚦 AI-Powered Urban Traffic Intelligence")
 st.divider()
 
